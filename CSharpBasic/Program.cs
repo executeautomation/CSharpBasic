@@ -78,10 +78,15 @@ namespace CSharpBasic
             //    Console.WriteLine($"The Student with {StudentName} & Age {StudentAge} & Grade {StudentGrade}");
 
 
-            feature.GetStudentsDetailS(out string name, out int age, out string grade);
+            //feature.GetStudentsDetailS(out string name, out int age, out string grade);
 
-            Console.WriteLine($"Student with name {name} has age {age} with grade {grade}");
+            //Console.WriteLine($"Student with name {name} has age {age} with grade {grade}");
 
+
+            Students s = new Students();
+            //s.Name = "Karthik";
+            
+            Console.WriteLine($"Name of student is: {s.GetStudentName()}");
 
             Console.Read();
 

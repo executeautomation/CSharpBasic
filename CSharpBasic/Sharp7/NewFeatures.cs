@@ -83,5 +83,10 @@ namespace CSharpBasic.Sharp7
         public string Grade { get; set; }
 
         public string Gender { get; set; }
+
+        public string GetStudentName()
+        {
+            return Name ?? throw new TypeInitializationException("CSharpBasic.Students.Name",new Exception("Name has to be initialized before calling it"));
+        }
     }
 }
