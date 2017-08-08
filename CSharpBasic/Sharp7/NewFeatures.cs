@@ -63,6 +63,13 @@ namespace CSharpBasic.Sharp7
         }
        
 
+        public void GetStudentsDetailS(out string name, out int age, out string grade)
+        {
+            name = "Karthik";
+            age = 30;
+            grade = "A";
+        }
+
 
     }
 

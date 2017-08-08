@@ -72,10 +72,15 @@ namespace CSharpBasic
 
             //feature.GetStudentsInfoWithGrade(feature.student.Where(x => x.Grade == "SuperFirst").First());
 
-            (string StudentName, int StudentAge, string StudentGrade) = feature.ReturnStudentInfo();
+            //(string StudentName, int StudentAge, string StudentGrade) = feature.ReturnStudentInfo();
 
-            if(StudentAge == 40)
-                Console.WriteLine($"The Student with {StudentName} & Age {StudentAge} & Grade {StudentGrade}");
+            //if(StudentAge == 40)
+            //    Console.WriteLine($"The Student with {StudentName} & Age {StudentAge} & Grade {StudentGrade}");
+
+
+            feature.GetStudentsDetailS(out string name, out int age, out string grade);
+
+            Console.WriteLine($"Student with name {name} has age {age} with grade {grade}");
 
 
             Console.Read();
