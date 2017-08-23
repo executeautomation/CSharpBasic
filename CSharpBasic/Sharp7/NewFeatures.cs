@@ -76,6 +76,23 @@ namespace CSharpBasic.Sharp7
 
     public class Students
     {
+
+        public Students(string name) => Name = name;
+
+        public Students()
+        {
+                
+        }
+
+
+        private int _salary;
+
+        public int Salary
+        {
+            get => _salary;
+            set => _salary = value;
+        }
+
         public string Name { get; set; }
 
         public int Age { get; set; }
@@ -88,5 +105,7 @@ namespace CSharpBasic.Sharp7
         {
             return Name ?? throw new TypeInitializationException("CSharpBasic.Students.Name",new Exception("Name has to be initialized before calling it"));
         }
+
+        public void PrintName() => Console.WriteLine($"The name of Student is {Name}");
     }
 }

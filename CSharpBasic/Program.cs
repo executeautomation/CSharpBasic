@@ -83,10 +83,12 @@ namespace CSharpBasic
             //Console.WriteLine($"Student with name {name} has age {age} with grade {grade}");
 
 
-            Students s = new Students();
-            //s.Name = "Karthik";
+            Students s = new Students("Karthik");
             
-            Console.WriteLine($"Name of student is: {s.GetStudentName()}");
+            //Console.WriteLine($"Name of student is: {s.GetStudentName()}");
+
+
+            s.PrintName();
 
             Console.Read();
 
